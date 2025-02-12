@@ -1,0 +1,53 @@
+{
+    "resume": {
+        "name": "Luc de Wit",
+        "header": {
+            "job": "Programisto",
+            "email": "luc.dewit@hotmail.nl",
+            "phone": "0646898375",
+            "city": "Den Bosch"
+        },
+        "introduction": {
+            "title": "Kiu estas mi",
+            "text": "Mi estas pasia programisto kun 15 jaroj da hobia sperto kaj preskaŭ 4 jaroj da profesia sperto. mi estas fascinita pri komputiloj kaj programaro. Pro mia fokuso de lernado mi havas, mi pasigis sennombrajn horojn provante eltrovi kiel programara teknologio funkcias profunde."
+        },
+        "job_experience": {
+            "title": "Laborsperto",
+            "jobs": [
+                {
+                    "company": "X-Ingredient",
+                    "start_month": "Okt 2024",
+                    "end_month": "nuna",
+                    "description": "Ĉe X-Ingredient mi laboris kiel full-stack retejo-programisto pri ciferecaj retejo-bazitaj demo-prezentoj, merkataj retejoj, kaj aliaj pli interagaj retejoj, por internaciaj kompanioj kiel Philips, Nokia, MARS, kaj Juniper. Mi ĉefe uzis Laravel, VueJS kaj ReactJS ĉi tie."
+                },
+                {
+                    "company": "Quadira",
+                    "start_month": "Feb 2022",
+                    "end_month": "Jun 2024",
+                    "description": "Ĉe Quadira mi laboris kiel full-stack retejo-programisto kaj business central AL programisto. Mi laboris pri pluraj retportaloj, sed ankaŭ pri Business Central-konektilo por ilia ĉefa produkto: Advanced-Forms. Mi ĉefe uzis Laravel, VueJS, ASP.NET kaj AL ĉi tie."
+                },
+                {
+                    "company": "STA Software",
+                    "start_month": "Feb 2021",
+                    "end_month": "Feb 2022",
+                    "description": "Ĉe STA-Software mi laboris kiel full-stack retejo-programisto por ilia administra portalo kun la celo ciferecigi la konstrusektoron kaj forigi malnecesan paperan administradon. Mi ĉefe uzis Laravel, VueJS kaj ASP.NET ĉi tie."
+                }
+            ]
+        },
+        "projects": {
+            "title": "Projektoj"
+        },
+        "education": {
+            "title": "Edukado"
+        },
+        "languages": {
+            "title": "Lingvoj"
+        },
+        "skills": {
+            "title": "kapabloj"
+        },
+        "awards": {
+            "title": "Premioj"
+        }
+    }
+}

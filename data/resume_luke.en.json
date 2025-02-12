@@ -1,0 +1,145 @@
+{
+    "resume": {
+        "name": "Luc de Wit",
+        "header": {
+            "job": "Software Developer",
+            "email": "luc.dewit@hotmail.nl",
+            "phone": "0646898375",
+            "city": "Den Bosch"
+        },
+        "introduction": {
+            "title": "Who am I",
+            "text": "I’m a passionate software developer with 15 years of hobby experience and almost 4 years of professional experience. I’m fascinated about computers and software. Due to my focus of learning I have spent countless hours trying to figure out how software technology works under the hood."
+        },
+        "job_experience": {
+            "title": "Experience",
+            "jobs": [
+                {
+                    "company": "X-Ingredient",
+                    "start_month": "Oct 2024",
+                    "end_month": "current",
+                    "description": "At X-Ingredient I worked as a full-stack webdeveloper on digital web-based Demo presentations, marketing websites, and more interactive types of websites, for International companies like Philips, Nokia, MARS and Juniper. Here I mainly used laravel, VueJS, and ReactJS."
+                },
+                {
+                    "company": "Quadira",
+                    "start_month": "Feb 2022",
+                    "end_month": "Jun 2024",
+                    "description": "At Quadira I worked as a full-stack webdeveloper and business central AL developer. Working on multiple web-based portals, aswell as a Business Central connector for their main product: Advanced-Forms. Here I mainly used VueJS, ASP.NET and AL."
+                },
+                {
+                    "company": "STA Software",
+                    "start_month": "Feb 2021",
+                    "end_month": "Feb 2022",
+                    "description": "At STA-Software I worked as a full-stack webdeveloper for their administration portal with the goal to digitalize the construction sector and get rid of unneeded paper administration. Here I mainly used VueJS and ASP.NET."
+                }
+            ]
+        },
+        "projects": {
+            "title": "Projects",
+            "projects": [
+                {
+                    "name": "Galaxy Map",
+                    "tech": "NodeJS",
+                    "description": "Galaxy Map was a hobby project that I created to generate an entire galaxy containing millions of randomly generated star with their own statistics and position.",
+                    "img": "assets/galaxy_map.png"
+                },
+                {
+                    "name": "Lukes Scripting Repository",
+                    "tech": "Bash",
+                    "description": "Lukes Scripting Repository (LSR for short) is my project with all of my common bash functions and libraries. Over time this has grown to be quite powerfull",
+                    "img": "assets/lsr.png"
+                },
+                {
+                    "name": "Ranger Templating Engine",
+                    "tech": "Python, Bash",
+                    "description": "Ranger is my templating engine that I have created to easily and quickly generate static template sites, and pdf/html documents. Including this resume itself!",
+                    "img": "assets/ranger.png"
+                }
+            ]
+        },
+        "education": {
+            "title": "Education",
+            "educations": [
+                {
+                    "name": "MBO - Software Development",
+                    "location": "ROC de Leijgraaf",
+                    "start_year": "2019",
+                    "end_year": "2022"
+                },
+                {
+                    "name": "HAVO - Natuur en Gezondheid",
+                    "location": "Zwijsen College",
+                    "start_year": "2014",
+                    "end_year": "2019"
+                }
+            ]
+        },
+        "languages": {
+            "title": "Languages",
+            "languages": [
+                {
+                    "language": "🇳🇱 Dutch",
+                    "proficiency": "Native"
+                },
+                {
+                    "language": "🇺🇸 English",
+                    "proficiency": "Fluent"
+                },
+                {
+                    "language": "<img style=\"width: 16px;\" src=\"https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F_Kuq1cRCKbbg%2FTQ9QdPzH6hI%2FAAAAAAAAAbU%2FCNfhTXCNk-U%2Fs1600%2Fesperanto.png&f=1&nofb=1&ipt=ec7133e9d12cce7565b2b3fd7e8f9652580080af20418fc1e426d8971d038453&ipo=images\" /> Esperanto",
+                    "proficiency": "Elementary"
+                }
+            ]
+        },
+        "skills": {
+            "title": "Skills",
+            "skills": [
+                {
+                    "icon": "🧠",
+                    "skill": "Passionate learner"
+                },
+                {
+                    "icon": "🤝",
+                    "skill": "Pro-active teamplayer"
+                },
+                {
+                    "icon": "👀",
+                    "skill": "Focussed on work"
+                },
+                {
+                    "icon": "🥋",
+                    "skill": "Stoic communicator"
+                },
+                {
+                    "icon": "🧩",
+                    "skill": "Quality code-writer"
+                }
+            ]
+        },
+        "awards": {
+            "title": "Awards",
+            "awards": [
+                {
+                    "name": "Skills BeNeLux 2023",
+                    "place": "First place out of 8",
+                    "location": "Namen - BE"
+                },
+                {
+                    "name": "Skills The Finals 2022",
+                    "place": "First place out of 8",
+                    "location": "Utrecht - NL"
+                },
+                {
+                    "name": "Skills Masters 2022 Semifinals",
+                    "place": "Passed to finals",
+                    "location": "Leiden - NL"
+                },
+                {
+                    "name": "Hackathon masters 2019",
+                    "place": "1st place audience",
+                    "location": "'S-Hertogenbosch - NL"
+                }
+            ]
+        }
+    }
+}

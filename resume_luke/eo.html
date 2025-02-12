@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Luc de Wit</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .container-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: max(100vh, calc(800px * 1.41));
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24;
+        }
+
+        #resume-wrapper {
+            width: 800px;
+            height: calc(800px * 1.41);
+            overflow: hidden;
+            background: gray;
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        #resume {
+            width: 800px;
+            height: calc(800px * 1.41);
+        }
+
+        @media (max-width: 900px) {
+            #resume-wrapper {
+                zoom: 80%;
+                margin-top: -290px;
+            }
+        }
+
+        @media (max-width: 700px) {
+            #resume-wrapper {
+                zoom: 70%;
+                margin-top: -478px;
+            }
+        }
+
+        @media (max-width: 590px) {
+            #resume-wrapper {
+                zoom: 60%;
+                margin-top: -775px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #resume-wrapper {
+                zoom: 50%;
+                margin-top: -1130px;
+            }
+        }
+
+        @media (max-width: 410px) {
+            #resume-wrapper {
+                zoom: 35%;
+                margin-top: -2152px;
+            }
+        }
+
+        /* Header section */
+        header {
+            text-align: left;
+            background: rgb(26, 73, 115);
+            display: flex;
+            justify-content: left;
+            font-weight: lighter;
+            align-items: flex-end;
+        }
+        
+        header .material-symbols-outlined {
+            line-height: 18px;
+            padding-left: 20px;
+            padding-right: 3px;
+        }
+
+        header #profile-image {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        header #profile-header {
+            padding: 20px;
+            color: #bbb;
+        }
+        
+        header #profile-header #name {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        header #profile-header #job {
+            font-weight: lighter;
+        }
+
+        header #profile-header #info {
+            display: flex;
+            margin-top: 10px;
+            margin-left: -20px;
+            color: #ddd;
+        }
+
+        header h1 {
+            font-weight: lighter;
+            margin-bottom: 0px;
+        }
+
+        /* Main section */
+        main {
+            display: flex;
+            position: relative;
+            height: calc(800px * 1.41 - 150px);
+        }
+
+        main #left {
+            width: 550px;
+            height: 100%;
+            padding: 20px;
+        }
+
+        main h2 {
+            margin-bottom: -10px;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+
+        main #my-experiences .experience {
+            margin-bottom: 10px;
+        }
+
+        main #my-experiences .experience #company {
+            font-weight: bold;
+        }
+
+        main #my-experiences .experience #timeline {
+            color: #555;
+            display: inline-flex;
+            align-items: center;
+            position: relative;
+            top: 3px;
+        }
+
+        main #my-experiences .experience #timeline .material-symbols-outlined {
+            padding: 0 5px;
+            padding-bottom: 5px;
+        }
+
+        main #my-projects .project {
+            display: flex;
+            justify-content: left;
+            margin-top: 10px;
+        }
+
+        main #my-projects .project img {
+            background: red;
+            width: 50px;
+            height: 50px;
+            flex-shrink: 0;
+            margin: 5px 10px;
+            object-fit: cover;
+        }
+
+        main #my-projects .project #name {
+            font-weight: bold;
+            color: black;
+        }
+
+        main #my-projects .project #tech {
+            color: #333;
+        }
+
+        main #side {
+            background: rgb(86, 120, 152);
+            width: 250px;
+            height: 100%;
+            color: #ddd;
+        }
+
+        main #side h2 {
+            padding: 3px 10px;
+            border: none;
+            background: rgba(80%, 80%, 80%, 0.1);
+            color: white;
+            margin-left: -10px;
+            margin-bottom: 8px;
+        }
+
+        main #side .section {
+            padding-left: 10px;
+        }
+
+        main #side .section#education li #education {
+            color: white;
+            font-weight: bold;
+        }
+
+        main #side .section#education li #timeline {
+            display: flex;
+            align-items: center;
+            margin-top: 2px;
+        }
+
+        main #side .section#education li #timeline .material-symbols-outlined {
+            padding-bottom: 4px;
+        }
+
+        main #side .section#education li {
+            margin-top: 10px;
+        }
+
+        main #side .section#languages #language {
+            font-weight: bold;
+            color: white;
+        }
+
+        main #side .section#awards #competition {
+            font-weight: bold;
+            color: white;
+        }
+
+        main #side .section#awards li {
+            margin-top: 10px;
+        }
+
+        main #side .section#awards #award,main #side .section#awards #location {
+            display: flex;
+            align-content: center;
+        }
+        
+        .btn-download {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            cursor: pointer;
+            margin-top: 10px;
+            position: sticky;
+            bottom: 10px;
+            left: 10px;
+        }
+        
+        .btn-download:hover {
+            background: #0056b3;
+        }
+    </style>
+</link></head>
+<body>
+<div class="container-wrapper">
+<div id="resume-wrapper">
+<div class="container" id="resume">
+<header>
+<img alt="" id="profile-image" src="https://avatars.githubusercontent.com/u/37410843"/>
+<div id="profile-header">
+<h1><span id="name">Luc de Wit</span> — <span id="job">Programisto</span></h1>
+<div id="info">
+<svg fill="#e8eaed" height="24px" style="margin-left: 20px;" viewbox="0 -960 960 960" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"></path></svg>
+<span>luc.dewit@hotmail.nl</span>
+<svg fill="#e8eaed" height="24px" viewbox="0 -960 960 960" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"></path></svg>
+<span>0646898375</span>
+<span class="material-symbols-outlined">location_on</span>
+<span>Den Bosch</span>
+</div>
+</div>
+</header>
+<main>
+<section id="left">
+<div id="my-introduction">
+<h2 style="margin-top: 0;">Kiu estas mi</h2>
+<p>Mi estas pasia programisto kun 15 jaroj da hobia sperto kaj preskaŭ 4 jaroj da profesia sperto. mi estas fascinita pri komputiloj kaj programaro. Pro mia fokuso de lernado mi havas, mi pasigis sennombrajn horojn provante eltrovi kiel programara teknologio funkcias profunde.</p>
+</div>
+<div id="my-experiences">
+<h2>Laborsperto</h2>
+<p>
+<div class="experience">
+<span id="company">X-Ingredient</span> —
+                                    <span id="timeline">
+<span class="material-symbols-outlined">calendar_month</span>
+                                        Okt 2024 - nuna
+                                    </span>
+<div id="job-description">
+                                        Ĉe X-Ingredient mi laboris kiel full-stack retejo-programisto pri ciferecaj retejo-bazitaj demo-prezentoj, merkataj retejoj, kaj aliaj pli interagaj retejoj, por internaciaj kompanioj kiel Philips, Nokia, MARS, kaj Juniper. Mi ĉefe uzis Laravel, VueJS kaj ReactJS ĉi tie.
+                                    </div>
+</div><div class="experience">
+<span id="company">Quadira</span> —
+                                    <span id="timeline">
+<span class="material-symbols-outlined">calendar_month</span>
+                                        Feb 2022 - Jun 2024
+                                    </span>
+<div id="job-description">
+                                        Ĉe Quadira mi laboris kiel full-stack retejo-programisto kaj business central AL programisto. Mi laboris pri pluraj retportaloj, sed ankaŭ pri Business Central-konektilo por ilia ĉefa produkto: Advanced-Forms. Mi ĉefe uzis Laravel, VueJS, ASP.NET kaj AL ĉi tie.
+                                    </div>
+</div><div class="experience">
+<span id="company">STA Software</span> —
+                                    <span id="timeline">
+<span class="material-symbols-outlined">calendar_month</span>
+                                        Feb 2021 - Feb 2022
+                                    </span>
+<div id="job-description">
+                                        Ĉe STA-Software mi laboris kiel full-stack retejo-programisto por ilia administra portalo kun la celo ciferecigi la konstrusektoron kaj forigi malnecesan paperan administradon. Mi ĉefe uzis Laravel, VueJS kaj ASP.NET ĉi tie.
+                                    </div>
+</div>
+</p>
+</div>
+<div id="my-projects">
+<h2>Projektoj</h2>
+<p>
+<div class="project" x-for="project in resume['projects']['projects']">
+<img src="Error: name 'project' is not defined">
+<div id="project-info">
+<span id="name">Error: name 'project' is not defined</span>
+<span id="tech">Error: name 'project' is not defined</span>
+<div id="description">Error: name 'project' is not defined</div>
+</div>
+</img></div>
+</p>
+</div>
+</section>
+<section id="side">
+<div class="section" id="education">
+<h2 style="margin-top: 15px;">Edukado</h2>
+<ul>
+<li x-for="education in resume['education']['educations']">
+<div id="education">
+                                        Error: name 'education' is not defined
+                                    </div>
+<div id="location">
+                                        Error: name 'education' is not defined
+                                    </div>
+<div id="timeline">
+<span class="material-symbols-outlined">calendar_month</span>
+                                        Error: name 'education' is not defined - Error: name 'education' is not defined
+                                    </div>
+</li>
+</ul>
+</div>
+<div class="section" id="languages">
+<h2>Lingvoj</h2>
+<div x-for="lang in resume['languages']['languages']">
+<span id="language">Error: name 'lang' is not defined</span> - 
+                                <span id="level">Error: name 'lang' is not defined</span>
+</div>
+</div>
+<div class="section" id="skills">
+<h2>kapabloj</h2>
+<div x-for="skill in resume['skills']['skills']">
+<span id="icon">Error: name 'skill' is not defined</span>
+<span id="skill">Error: name 'skill' is not defined</span>
+</div>
+</div>
+<div class="section" id="awards">
+<h2>Premioj</h2>
+<ul>
+<li x-for="award in resume['awards']['awards']">
+<div id="competition">
+                                        Error: name 'award' is not defined
+                                    </div>
+<div id="award">
+<span class="material-symbols-outlined">trophy</span>
+                                        Error: name 'award' is not defined
+                                    </div>
+<div id="location">
+<span class="material-symbols-outlined">location_on</span>
+                                        Error: name 'award' is not defined
+                                    </div>
+</li>
+</ul>
+</div>
+</section>
+</main>
+</div>
+</div>
+</div>
+<a class="btn-download" onclick="downloadPDF()">Download as PDF</a>
+<script>
+        async function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            
+            const doc = new jsPDF('portrait', 'pt');
+            console.log(doc)
+            let content = document.querySelector('#resume');
+            
+            const resume = document.getElementById("resume");
+
+            doc.html(content, {
+                callback: function (doc) {
+                    doc.save('resume.pdf');
+                },
+                html2canvas: {
+                    dpi: 300,
+                    scale: 0.7439, // 0.7438 - 0.7440
+                    width: 800,
+                    height: 800 * 1.41,
+                    renderText: true,
+                    allowTaint: true,
+                },
+                x: 0,
+                y: 0,
+                zoom: 700
+            });
+        }
+    </script>
+</body>
+</html>

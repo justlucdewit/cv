@@ -1,0 +1,22 @@
+{
+    "generate": [
+        {
+            "name": "Lukes English Resume",
+            "template": "index.html",
+            "data": "data/resume_luke.en.json",
+            "output": "resume_luke/index.html"
+        },
+        {
+            "name": "Lukes Dutch Resume",
+            "template": "index.html",
+            "data": "data/resume_luke.nl.json",
+            "output": "resume_luke/nl.html"
+        },
+        {
+            "name": "Lukes Esperanto Resume",
+            "template": "index.html",
+            "data": "data/resume_luke.eo.json",
+            "output": "resume_luke/eo.html"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "resume": {
+        "name": "Luc de Wit",
+        "header": {
+            "job": "Software Ontwikkelaar",
+            "email": "luc.dewit@hotmail.nl",
+            "phone": "0646898375",
+            "city": "Den Bosch"
+        },
+        "introduction": {
+            "title": "Wie ben ik",
+            "text": "Ik ben een pasievolle software ontwikkelaar met 15 jaar aan hobby ervaring en bijna 4 jaar aan professionele ervaring. Mede door mijn focus op het leren van het onbekende, heb ik ontelbaar veel uur gestoken om te proberen uit te vogelen hoe technologie en software diep van binnen werken."
+        },
+        "job_experience": {
+            "title": "Ervaring",
+            "jobs": [
+                {
+                    "company": "X-Ingredient",
+                    "start_month": "Okt 2024",
+                    "end_month": "heden",
+                    "description": "Bij X-Ingredient werkte ik als een full-stack webdeveloper aan digitale web-based demo presentaties, marketing websites, en andere meer interactieve websites, voor Internationale bedrijven zoals Philips, Nokia, MARS, en Juniper. I gebruikte hier voornamelijk Laravel, VueJS, en ReactJS"
+                },
+                {
+                    "company": "Quadira",
+                    "start_month": "Feb 2022",
+                    "end_month": "Jun 2024",
+                    "description": "Bij Quadira werkte ik als full-stack webdeveloper en business central AL developer. Ik werkte aan meerdere web portalen, maar ook aan een Business Central connector voor hun hoofd product: Advanced-Forms. Hier gebruikte ik voornamelijk VueJS, ASP.NET en AL."
+                },
+                {
+                    "company": "STA Software",
+                    "start_month": "Feb 2021",
+                    "end_month": "Feb 2022",
+                    "description": "Bij STA-Software werkte ik als een full-stack web developer voor hun administratie portaal met doel om de bouw sector te digitaliseren en van onnodige papieren administratie af te komen. Hier gebruikte ik voornamelijk VueJS en ASP.NET."
+                }
+            ]
+        },
+        "projects": {
+            "title": "Projecten"
+        },
+        "education": {
+            "title": "Opleiding"
+        },
+        "languages": {
+            "title": "Talen"
+        },
+        "skills": {
+            "title": "Vaardigheden"
+        },
+        "awards": {
+            "title": "Prijzen"
+        }
+    }
+}
