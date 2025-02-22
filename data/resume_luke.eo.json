@@ -35,19 +35,111 @@
             ]
         },
         "projects": {
-            "title": "Projektoj"
+            "title": "Projektoj",
+            "projects": [
+                {
+                    "name": "Galaksio Mapo",
+                    "tech": "NodeJS",
+                    "description": "Galaksio Map estis hobia projekto kiun mia fari, kiu generas tutan galaksion kun multoblaj hazarda steloj kun siaj propraj statistikoj kaj pozicioj.",
+                    "img": "/assets/galaxy_map.png"
+                },
+                {
+                    "name": "Lukes Scripting Repository",
+                    "tech": "Bash",
+                    "description": "Lukes Scripting Repository (LSR in het kort) estas kolekto de mia bash skriptoj kiujn mi uzas kun mia programado. Kun la tempo ĉi tio fariĝis tre potenca.",
+                    "img": "/assets/lsr.png"
+                },
+                {
+                    "name": "Ranger Templating Engine",
+                    "tech": "Python, Bash",
+                    "description": "Ranger estas mia HTML ŝablona-engine kiun mi kreis por kreante dokumentojn kaj retejojn rapida kaj facila. Inkluzive de ĉi tiu CV mem!",
+                    "img": "/assets/ranger.png"
+                }
+            ]
         },
         "education": {
-            "title": "Edukado"
+            "title": "Edukado",
+            "educations": [
+                {
+                    "name": "MBO - Programaro",
+                    "location": "ROC de Leijgraaf",
+                    "start_year": "2019",
+                    "end_year": "2022"
+                },
+                {
+                    "name": "HAVO - Naturo kaj Sano",
+                    "location": "Zwijsen College",
+                    "start_year": "2014",
+                    "end_year": "2019"
+                }
+            ]
         },
         "languages": {
-            "title": "Lingvoj"
+            "title": "Lingvoj",
+            "languages": [
+                {
+                    "language": "🇳🇱 La nederlando",
+                    "proficiency": "Fluanta"
+                },
+                {
+                    "language": "🇺🇸 La anglo",
+                    "proficiency": "Fluanta"
+                },
+                {
+                    "language": "<img style=\"width: 16px;\" src=\"https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F_Kuq1cRCKbbg%2FTQ9QdPzH6hI%2FAAAAAAAAAbU%2FCNfhTXCNk-U%2Fs1600%2Fesperanto.png&f=1&nofb=1&ipt=ec7133e9d12cce7565b2b3fd7e8f9652580080af20418fc1e426d8971d038453&ipo=images\" /> La esperanto",
+                    "proficiency": "Baza"
+                }
+            ]
         },
         "skills": {
-            "title": "kapabloj"
+            "title": "kapabloj",
+            "skills": [
+                {
+                    "icon": "🧠",
+                    "skill": "Pasia Lernanto"
+                },
+                {
+                    "icon": "🤝",
+                    "skill": "Poraktiva Teamludanto"
+                },
+                {
+                    "icon": "👀",
+                    "skill": "Tre Enfokusigita"
+                },
+                {
+                    "icon": "🥋",
+                    "skill": "Trankvila Komunikilo"
+                },
+                {
+                    "icon": "🧩",
+                    "skill": "Kvalita Programisto"
+                }
+            ]
         },
         "awards": {
-            "title": "Premioj"
+            "title": "Premioj",
+            "awards": [
+                {
+                    "name": "Skills BeNeLux 2023",
+                    "place": "Unua loko de 8",
+                    "location": "Namen - BE"
+                },
+                {
+                    "name": "Skills The Finals 2022",
+                    "place": "Unua loko de 8",
+                    "location": "Utrecht - NL"
+                },
+                {
+                    "name": "Skills Masters 2022 Semifinals",
+                    "place": "Daŭrigu al la finalo",
+                    "location": "Leiden - NL"
+                },
+                {
+                    "name": "Hackathon masters 2019",
+                    "place": "1ste plaats publiek",
+                    "location": "'S-Hertogenbosch - NL"
+                }
+            ]
         }
     }
 }

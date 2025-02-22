@@ -18,7 +18,7 @@
                     "company": "X-Ingredient",
                     "start_month": "Okt 2024",
                     "end_month": "heden",
-                    "description": "Bij X-Ingredient werkte ik als een full-stack webdeveloper aan digitale web-based demo presentaties, marketing websites, en andere meer interactieve websites, voor Internationale bedrijven zoals Philips, Nokia, MARS, en Juniper. I gebruikte hier voornamelijk Laravel, VueJS, en ReactJS"
+                    "description": "Bij X-Ingredient werkte ik als een full-stack webdeveloper aan digitale web-based demo presentaties, marketing websites, en andere meer interactieve websites. Ik gebruikte hier voornamelijk Laravel, VueJS, en ReactJS"
                 },
                 {
                     "company": "Quadira",
@@ -30,24 +30,116 @@
                     "company": "STA Software",
                     "start_month": "Feb 2021",
                     "end_month": "Feb 2022",
-                    "description": "Bij STA-Software werkte ik als een full-stack web developer voor hun administratie portaal met doel om de bouw sector te digitaliseren en van onnodige papieren administratie af te komen. Hier gebruikte ik voornamelijk VueJS en ASP.NET."
+                    "description": "Bij STA-Software werkte ik als een full-stack web developer voor hun administratie portaal om de bouw sector te digitaliseren. Hier gebruikte ik voornamelijk VueJS en ASP.NET."
                 }
             ]
         },
         "projects": {
-            "title": "Projecten"
+            "title": "Projecten",
+            "projects": [
+                {
+                    "name": "Galaxy Map",
+                    "tech": "NodeJS",
+                    "description": "Galaxy Map was een hobby project die ik gemaakt heb dat een geheel sterrenstelsel genereerde met miljoenen random gegenereerde sterren met hun eigen statestieken en posities.",
+                    "img": "/assets/galaxy_map.png"
+                },
+                {
+                    "name": "Lukes Scripting Repository",
+                    "tech": "Bash",
+                    "description": "Lukes Scripting Repository (LSR in het kort) is een verzameling van mijn bash scripts die ik gebruik in mijn development werkzaamheden. Door de tijd heen is dit enorm krachtig geworden.",
+                    "img": "/assets/lsr.png"
+                },
+                {
+                    "name": "Ranger Templating Engine",
+                    "tech": "Python, Bash",
+                    "description": "Ranger is mijn HTML templating engine dat ik heb gemaakt om snel en gemakkelijk statische template websites en docuemnten te kunnen genereren. Inclusief deze CV zelf!",
+                    "img": "/assets/ranger.png"
+                }
+            ]
         },
         "education": {
-            "title": "Opleiding"
+            "title": "Opleiding",
+            "educations": [
+                {
+                    "name": "MBO - Software Ontwikkeling",
+                    "location": "ROC de Leijgraaf",
+                    "start_year": "2019",
+                    "end_year": "2022"
+                },
+                {
+                    "name": "HAVO - Natuur en Gezondheid",
+                    "location": "Zwijsen College",
+                    "start_year": "2014",
+                    "end_year": "2019"
+                }
+            ]
         },
         "languages": {
-            "title": "Talen"
+            "title": "Talen",
+            "languages": [
+                {
+                    "language": "🇳🇱 Nederlands",
+                    "proficiency": "Vloeiend"
+                },
+                {
+                    "language": "🇺🇸 Engels",
+                    "proficiency": "Vloeiend"
+                },
+                {
+                    "language": "<img style=\"width: 16px;\" src=\"https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F_Kuq1cRCKbbg%2FTQ9QdPzH6hI%2FAAAAAAAAAbU%2FCNfhTXCNk-U%2Fs1600%2Fesperanto.png&f=1&nofb=1&ipt=ec7133e9d12cce7565b2b3fd7e8f9652580080af20418fc1e426d8971d038453&ipo=images\" /> Esperanto",
+                    "proficiency": "Basis"
+                }
+            ]
         },
         "skills": {
-            "title": "Vaardigheden"
+            "title": "Vaardigheden",
+            "skills": [
+                {
+                    "icon": "🧠",
+                    "skill": "Passievolle Leerder"
+                },
+                {
+                    "icon": "🤝",
+                    "skill": "Pro-actieve Teamspeler"
+                },
+                {
+                    "icon": "👀",
+                    "skill": "Diep Gefocust"
+                },
+                {
+                    "icon": "🥋",
+                    "skill": "Kalme Communiceerder"
+                },
+                {
+                    "icon": "🧩",
+                    "skill": "Kwaliteits Programmeur"
+                }
+            ]
         },
         "awards": {
-            "title": "Prijzen"
+            "title": "Prijzen",
+            "awards": [
+                {
+                    "name": "Skills BeNeLux 2023",
+                    "place": "Eerste plaats van 8",
+                    "location": "Namen - BE"
+                },
+                {
+                    "name": "Skills The Finals 2022",
+                    "place": "Eerste plaats van 8",
+                    "location": "Utrecht - NL"
+                },
+                {
+                    "name": "Skills Masters 2022 Semifinals",
+                    "place": "Door naar finale",
+                    "location": "Leiden - NL"
+                },
+                {
+                    "name": "Hackathon masters 2019",
+                    "place": "1ste plaats publiek",
+                    "location": "'S-Hertogenbosch - NL"
+                }
+            ]
         }
     }
 }
